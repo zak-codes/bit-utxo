@@ -1,10 +1,10 @@
 # bit_UTXO
 
-**A compact, block-indexed UTXO status storage algorithm using single-bit identifiers.**
+**A compact, block-indexed UTXO status algorithm implementation using single-bit identifiers.**
 
 ## Overview
 
-bit_UTXO is a UTXO status storage algorithm designed to efficiently determine whether a specific UTXO, identified by its originating block number and output position within that block, has already been spent.
+bit_UTXO uses a UTXO status storage algorithm designed to efficiently determine whether a specific UTXO, identified by its originating block number and output position within that block, has already been spent.
 
 Every transaction output is represented by exactly **1 bit** in a continuously expanding array.
 
@@ -12,6 +12,7 @@ Instead of allocating a fixed amount of storage for every block, each block spec
 
 The array expands dynamically as new blocks are added.
 
+The author developed this algorithm independently but makes no guarantee of its originality, uniqueness, or novelty.
 ## 1. Block allocation
 
 Each block specifies two values:
