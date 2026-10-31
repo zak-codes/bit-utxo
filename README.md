@@ -2,6 +2,8 @@
 
 **A compact, block-indexed UTXO status algorithm implementation using single-bit identifiers.**
 
+[Implementation Documentation](IMPLEMENTATION.md)
+
 ## Overview
 
 bit_UTXO uses a UTXO status storage algorithm designed to efficiently determine whether a specific UTXO, identified by its originating block number and output position within that block, has already been spent.
